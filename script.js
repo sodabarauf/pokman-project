@@ -23,7 +23,6 @@ const searchPokedex = async () => {
   try {
     const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${userInput.value.toLowerCase()}`);
     const data = await res.json();
-    console.log(data);
     const {
       name, id, weight, height, types, stats, sprites,
     } = data;
@@ -45,10 +44,9 @@ const searchPokedex = async () => {
     specialAttack.innerHTML = stats[3].base_stat;
     specialDefense.innerHTML = stats[4].base_stat;
     speed.innerHTML = stats[5].base_stat;
-  }
 
+  }
   catch (err) {
-    console.log(err);
     alert('Pokemon not found');
   }
 };
