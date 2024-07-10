@@ -30,7 +30,6 @@ const searchPokedex = async () => {
     pokemonImage.innerHTML = `
       <img src='${sprites.front_default}' id='sprite'>
     `;
-
     pokemonName.innerHTML = name.toUpperCase();
     pokemonId.innerHTML = `#${id}`;
 
@@ -43,8 +42,8 @@ const searchPokedex = async () => {
     defense.innerHTML = stats[2].base_stat;
     specialAttack.innerHTML = stats[3].base_stat;
     specialDefense.innerHTML = stats[4].base_stat;
-    speed.innerHTML = stats[5].base_stat; }
-  catch (err) {
+    speed.innerHTML = stats[5].base_stat;
+  } catch (err) {
     alert('Pokemon not found');
   }
 };
