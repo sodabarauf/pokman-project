@@ -39,15 +39,14 @@ const searchPokedex = async () => {
     pokemonTypes.innerHTML = types.map((type) => `<span class='${type.type.name.toLowerCase()}'>${type.type.name.toUpperCase()}</span>`).join(' ');
 
     hp.innerHTML = stats[0].base_stat;
-attack.innerHTML = stats[1].base_stat;
-defense.innerHTML = stats[2].base_stat;
-specialAttack.innerHTML = stats[3].base_stat;
-specialDefense.innerHTML = stats[4].base_stat;
-speed.innerHTML = stats[5].base_stat;
-}
-catch (err) {
-  alert('Pokemon not found');
-}
+    attack.innerHTML = stats[1].base_stat;
+    defense.innerHTML = stats[2].base_stat;
+    specialAttack.innerHTML = stats[3].base_stat;
+    specialDefense.innerHTML = stats[4].base_stat;
+    speed.innerHTML = stats[5].base_stat; }
+  catch (err) {
+    alert('Pokemon not found');
+  }
 };
 
 submitBtn.addEventListener('click', searchPokedex);
