@@ -46,7 +46,7 @@ const searchPokedex = async () => {
     specialDefense.innerHTML = stats[4].base_stat;
     speed.innerHTML = stats[5].base_stat;
   }
-  
+
   catch (err) {
     console.log(err);
     alert('Pokemon not found');
