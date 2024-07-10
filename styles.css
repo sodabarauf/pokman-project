@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
-                
+     
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +75,7 @@ label {
   min-height: 300px;
   padding: 10px;
   background-color: rgb(12, 12, 12);
+
   /* border: rgb(223, 223, 223) solid 10px; */
   color: white;
   border-radius: 5px;
@@ -87,7 +88,8 @@ label {
   width: 200px;
 }
 
-#weight, #height {
+#weight,
+#height {
   align-self: flex-start;
 }
 
@@ -107,8 +109,9 @@ table {
   width: 100%;
 }
 
-td, th {
-  background-color: #ffffff;
+td,
+th {
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -117,7 +120,7 @@ td, th {
 .normal {
   background-color: #b7b7aa;
 }
-  
+
 .fire {
   background-color: #ff6f52;
 }
@@ -151,7 +154,7 @@ td, th {
 }
 
 .flying {
-  background-color: #8899ff;
+  background-color: #89f;
 }
 
 .psychic {
